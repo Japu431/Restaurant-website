@@ -1,0 +1,71 @@
+.comidas {
+  width: 95%;
+  margin: auto;
+}
+
+.comidas h1 {
+  margin: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;
+  background-color: #fd7575;
+  border: 1.5px solid black;
+
+  padding: 18px;
+  margin: 30px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-header h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.card .imagem img {
+  object-fit: cover;
+  width: 80%;
+  height: 180px;
+}
+
+.card-content {
+  margin: 20px;
+}
+
+.card-content p {
+  font-size: 20px;
+}
+
+.card-content .lista ul li {
+  list-style-type: disc;
+  margin: 10px;
+}
+
+.card #pedir {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  
+  transition: all ease 0.8s;
+}
+
+.card #pedir:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}

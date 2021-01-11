@@ -1,0 +1,16 @@
+.rodape {
+  background: gray;
+  padding: 40px;
+
+  font-size: 24px;
+}
+
+.rodape,
+.rodape p a {
+  text-align: center;
+  color: white;
+}
+
+.rodape p a {
+  text-decoration: none;
+}
