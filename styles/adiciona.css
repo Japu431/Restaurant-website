@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+}
+
+.container-do-adiciona {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-do-adiciona #enviar {
+  width: 20%;
+}
+
+.input-adicionar {
+  margin: 8px;
+}

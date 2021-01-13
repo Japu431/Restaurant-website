@@ -6,9 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/imagem-destaque.css" />
     <link rel="stylesheet" href="./styles/comidas.css" />
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/adiciona.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
   </head>
 
   <body>
@@ -16,9 +19,63 @@
       <div class="logo">Logo</div>
       <nav class="navigation">
         <ul>
-          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="./index.html">Home</a></li>
           <li class="link"><a href="#">Localização</a></li>
           <li class="link"><a href="#">Contato / Delivery</a></li>
+
+          <button class="link" id="myBtn">Adicionar Comida</button>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="container">
+                <div class="container-do-adiciona">
+                  <label for="adicionar">
+                    Nome da Comida:
+                    <input
+                      class="input-adicionar"
+                      type="text"
+                      name="nome-comida"
+                      id="adicionar"
+                      placeholder="Nome da comida..."
+                      autocomplete="off"
+                    />
+                  </label>
+                  <label for="imagem">
+                    <input
+                      type="file"
+                      name="imagem"
+                      id="imagem"
+                      class="input-adicionar"
+                    />
+                  </label>
+                  <label for="ingredientes">
+                    <textarea
+                      class="input-adicionar"
+                      type="text"
+                      name="ingredientes"
+                      id="ingredientes"
+                      placeholder="Insira os Ingredientes"
+                      style="resize: vertical"
+                      cols="40"
+                      rows="10"
+                    ></textarea>
+                  </label>
+                  <button
+                    id="enviar"
+                    class="input-adicionar"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <label class="link"
+            ><input type="checkbox" name="toggle" id="toggle" />Modo
+            Noturno</label
+          >
         </ul>
       </nav>
     </header>
@@ -41,7 +98,7 @@
       <div class="cards">
         <section class="card">
           <div class="card-header">
-            <h3>Nome da Comida</h3>
+            <h3 id="nome-comida">Nome da Comida</h3>
             <div class="imagem">
               <img
                 src="https://source.unsplash.com/random/summer"
@@ -50,133 +107,15 @@
             </div>
           </div>
           <div class="card-content">
-            <p>Ingredientes</p>
+            <p class="titulo-receita">Receita</p>
             <div class="lista">
               <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
-          </div>
-          <button id="pedir">Pedir</button>
-        </section>
-
-        <section class="card">
-          <div class="card-header">
-            <h3>Nome da Comida</h3>
-            <div class="imagem">
-              <img
-                src="https://source.unsplash.com/random/night"
-                alt="Foto Comida"
-              />
-            </div>
-          </div>
-          <div class="card-content">
-            <p>Ingredientes</p>
-            <div class="lista">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
-          </div>
-          <button id="pedir">Pedir</button>
-        </section>
-
-        <section class="card">
-          <div class="card-header">
-            <h3>Nome da Comida</h3>
-            <div class="imagem">
-              <img
-                src="https://source.unsplash.com/random/beach"
-                alt="Foto Comida"
-              />
-            </div>
-          </div>
-          <div class="card-content">
-            <p>Ingredientes</p>
-            <div class="lista">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
-          </div>
-          <button id="pedir">Pedir</button>
-        </section>
-
-        <section class="card">
-          <div class="card-header">
-            <h3>Nome da Comida</h3>
-            <div class="imagem">
-              <img
-                src="https://source.unsplash.com/random/music"
-                alt="Foto Comida"
-              />
-            </div>
-          </div>
-          <div class="card-content">
-            <p>Ingredientes</p>
-            <div class="lista">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
-          </div>
-          <button id="pedir">Pedir</button>
-        </section>
-
-        <section class="card">
-          <div class="card-header">
-            <h3>Nome da Comida</h3>
-            <div class="imagem">
-              <img
-                src="https://source.unsplash.com/random/morning"
-                alt="Foto Comida"
-              />
-            </div>
-          </div>
-          <div class="card-content">
-            <p>Ingredientes</p>
-            <div class="lista">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
-          </div>
-          <button id="pedir">Pedir</button>
-        </section>
-
-        <section class="card">
-          <div class="card-header">
-            <h3>Nome da Comida</h3>
-            <div class="imagem">
-              <img
-                src="https://source.unsplash.com/random/sun"
-                alt="Foto Comida"
-              />
-            </div>
-          </div>
-          <div class="card-content">
-            <p>Ingredientes</p>
-            <div class="lista">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
+                <p class="link-listas">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Temporibus recusandae debitis ducimus, eligendi neque maiores
+                  magnam, maxime ipsa architecto est ex officiis cupiditate
+                  ipsam molestias asperiores voluptas tempore culpa ipsum.
+                </p>
               </ul>
             </div>
           </div>
@@ -186,7 +125,13 @@
     </main>
 
     <footer class="rodape">
-      <p>Criado por &copy;<a href="https://github.com/Japu431" target="_blank">Japu431</a></p>
+      <p>
+        Criado por &copy;<a href="https://github.com/Japu431" target="_blank"
+          >Japu431</a
+        >
+      </p>
     </footer>
+    <script src="./js/dark/darkmode.js"></script>
+    <script src="./js/home/home.js"></script>
   </body>
 </html>

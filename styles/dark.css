@@ -1,0 +1,30 @@
+body,
+.header,
+.logo,
+.frase-destaque {
+  transition: all ease 0.5s;
+}
+
+body.dark {
+  background-color: #424242;
+  color: white;
+}
+
+body.dark .frase-destaque {
+  background: #424242;
+}
+
+body.dark .header {
+  background-color: #727272;
+  color: black;
+}
+
+body.dark .logo {
+  color: white;
+}
+
+
+body.dark .container-do-adiciona {
+  color: white;
+}
+

@@ -6,7 +6,10 @@
   padding: 15px 20px;
 
   margin-bottom: 20px;
+
+  transition: all ease 0.5s;
 }
+
 
 .logo {
   font-weight: bold;
@@ -14,11 +17,10 @@
   font-size: 28px;
 }
 
-.logo ,
+.logo,
 .navigation .link {
   text-transform: uppercase;
 }
-
 
 .navigation ul {
   display: flex;
@@ -35,8 +37,8 @@
 }
 
 .navigation .link:hover {
-    background: #cecdcd;
-    cursor: pointer;
+  background: #cecdcd;
+  cursor: pointer;
 }
 
 .navigation .link a {
